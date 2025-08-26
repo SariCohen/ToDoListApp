@@ -1,0 +1,27 @@
+<mat-dialog-content class="task-details-dialog">
+  <h2 mat-dialog-title class="dialog-title">Task Details</h2>
+
+  <div class="task-info">
+    <div class="task-item">
+      <strong>Title:</strong>
+      <div class="task-value">{{ task.title }}</div>
+    </div>
+
+    <div class="task-item">
+      <strong>Description:</strong>
+      <div class="task-value">{{ task.description }}</div>
+    </div>
+  </div>
+
+  <div class="completed-checkbox">
+    <mat-checkbox [(ngModel)]="task.completed">
+      {{ task.completed ? 'Completed' : 'Not Completed' }}
+    </mat-checkbox>
+  </div>
+
+  <mat-dialog-actions class="dialog-actions">
+    <button mat-raised-button class="save-button" (click)="updateCompletionStatus()">Save</button>
+    <button mat-raised-button class="save-button" (click)="deleteTask()">Delete</button>
+    <button mat-raised-button mat-dialog-close class="close-button">Close</button>
+  </mat-dialog-actions>
+</mat-dialog-content>

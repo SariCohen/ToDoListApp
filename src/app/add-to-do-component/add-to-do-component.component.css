@@ -1,0 +1,10 @@
+.error{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: block;
+}
+.form-field{
+    margin-bottom: 16px;
+    width: 100%;
+}

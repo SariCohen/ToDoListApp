@@ -1,0 +1,49 @@
+.task-details-dialog {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .dialog-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .task-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-value {
+    font-size: 16px;
+    background: #f3dde1;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
+  .completed-checkbox {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .save-button,
+  .close-button {
+    margin: 0 5px;
+  }
+  

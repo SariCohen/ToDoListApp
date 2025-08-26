@@ -1,0 +1,23 @@
+<mat-dialog-content>
+  <h2 mat-dialog-title>Add New Task</h2>
+
+  <small *ngIf="titleField.invalid && titleField.touched" class="error">
+    Title is required (minimum 3 characters).
+  </small>
+
+  <mat-form-field class="form-field">
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Task title" required [(ngModel)]="title" name="title" #titleField="ngModel"
+      minlength="3" />
+  </mat-form-field>
+
+  <mat-form-field class="form-field">
+    <mat-label>Description</mat-label>
+    <textarea matInput [(ngModel)]="description" placeholder="Task description" style="resize: none;" rows="4"></textarea>
+  </mat-form-field>
+
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="addTask()" [disabled]="titleField.invalid">Add</button>
+    <button mat-raised-button mat-dialog-close>Close</button>
+  </mat-dialog-actions>
+</mat-dialog-content>
